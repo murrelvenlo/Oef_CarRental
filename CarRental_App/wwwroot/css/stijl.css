@@ -1,0 +1,37 @@
+﻿body {
+    background-image: url(../images/auto2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 720px;
+    /*min-width: 100%;*/
+}
+
+nav a{
+    color: white;
+    font-weight: bold !important;
+}
+nav.nav-verplaatsen {
+    float: right;
+}
+
+nav.navbar-brand{
+    float: left;
+}
+
+.ag {
+    /*transform: translate(350px, 250px)*/
+    /*position: relative;*/
+}
+.knopjes {
+    /*position: absolute;
+    bottom: 0;
+    right: 0;*/
+}
+.admin{
+   
+
+}
+.gebruiker{
+   
+}
