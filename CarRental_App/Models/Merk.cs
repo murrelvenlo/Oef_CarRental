@@ -9,5 +9,7 @@ namespace CarRental_App.Models
     {
         public int MerkID { get; set; }
         public string MerkNaam { get; set; }
+
+        public ICollection<Automodel> Automodellen { get; set; }
     }
 }

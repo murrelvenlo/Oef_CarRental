@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
-namespace CarRental_App.Models
+namespace CarRental_App.ViewModels
 {
-    public class Automodel
+    public class AutomodelOverzichtViewModel
     {
         public int AutomodelID { get; set; }
         public string Type { get; set; }
-        public Merk merk { get; set; }
         public int MerkID { get; set; }
-
-        public ICollection<Auto> Autos { get; set; }
+        public string MerkNaam { get; set; }
     }
 }

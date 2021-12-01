@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using CarRental_App.ViewModels;
 
 namespace CarRental_App.Controllers
 {
@@ -20,7 +21,16 @@ namespace CarRental_App.Controllers
 
         public IActionResult Index()
         {
+
             return View();
+
+        }
+
+        public IActionResult AutoOverzicht()
+        {
+            AutoLijstViewModels vm = new AutoLijstViewModels();
+            //vm.Autos = autos;
+            return View(vm);
         }
 
         public IActionResult Privacy()

@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CarRental_App.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace CarRental_App
 {
@@ -24,6 +26,8 @@ namespace CarRental_App
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<CarRentalContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("LocalDBConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

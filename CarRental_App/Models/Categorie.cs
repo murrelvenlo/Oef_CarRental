@@ -12,6 +12,9 @@ namespace CarRental_App.Models
         public string Beschrijving { get; set; }
         public int AantalDeuren { get; set; }
         public int AantalZitplaatsen { get; set; }
-        public float PrijsPerDag { get; set; }
+        public Decimal? PrijsPerDag { get; set; }
+
+        public ICollection<ReservatieCategorie> ReservatieCategorieën { get; set; }
+        public ICollection<Auto> Autos { get; set; }
     }
 }

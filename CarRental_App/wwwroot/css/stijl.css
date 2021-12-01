@@ -1,13 +1,30 @@
-﻿body {
-    background-image: url(../images/auto2.jpg);
+﻿
+/** {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+.boven {
+    background-color: #DE3D17;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+header {*/
+    /*background-image: url(afbeelding/img_flexbox.jpg);*/
+    /*background-repeat: no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 720px;
-    /*min-width: 100%;*/
+    background-color: #ccc;
+    height: 50%;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
 }
-
-nav a{
+    nav a{
     color: white;
     font-weight: bold !important;
 }
@@ -19,19 +36,19 @@ nav.navbar-brand{
     float: left;
 }
 
-.ag {
+.ag {*/
     /*transform: translate(350px, 250px)*/
     /*position: relative;*/
-}
-.knopjes {
+/*}
+.knopjes {*/
     /*position: absolute;
     bottom: 0;
     right: 0;*/
-}
+/*}
 .admin{
    
 
 }
 .gebruiker{
    
-}
+}*/
