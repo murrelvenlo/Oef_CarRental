@@ -10,8 +10,10 @@ namespace CarRental_App.Models
     {
         public int AutomodelID { get; set; }
         public string Type { get; set; }
+        public string Afbeelding { get; set; }
         public Merk merk { get; set; }
         public int MerkID { get; set; }
+        
 
         public ICollection<Auto> Autos { get; set; }
     }

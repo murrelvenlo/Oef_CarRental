@@ -7,6 +7,14 @@
 <div>
     @foreach (var merk in Model.Merken)
     {
-        <h1>@merk.MerkNaam</h1>
+        <div class="card flex-row">
+
+            <img class="card-img-left example-card-img-responsive" src="" />
+            <div class="card-body">
+                <h4 class="card-title h5 h4-sm">@merk.MerkNaam</h4>
+                <button>Bekijk aanbiedingen</button>
+                <p class="card-text">Example text</p>
+            </div>
+        </div>
     }
-</div>
+    </div>
