@@ -10,7 +10,14 @@ namespace CarRental_App.Controllers
 {
     public class AutoController : Controller
     {
-        public List<Merk> merken;
+        
+
+        public AutoController()
+        {
+            
+        }
+
+        
         public IActionResult AutoOverzicht()
         {
             List<Auto> autos = new List<Auto>();
@@ -25,21 +32,7 @@ namespace CarRental_App.Controllers
             return View(autos);
         }
 
-        public IActionResult AutomodelOverzicht(int id)
-        {
-            Merk merk = merken.Where(md => md.MerkID == id).FirstOrDefault();
-            if (merk != null)
-            {
-                AutomodelOverzichtViewModel viewModel = new AutomodelOverzichtViewModel()
-                {
-                    MerkNaam = merk.MerkNaam
-                };
-                return View(viewModel);
-
-            }
-            return NotFound();
-            
-        }
+        
 
 
 

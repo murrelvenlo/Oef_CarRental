@@ -2,7 +2,7 @@
 
 namespace CarRental_App.Migrations
 {
-    public partial class Migration3 : Migration
+    public partial class _32 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

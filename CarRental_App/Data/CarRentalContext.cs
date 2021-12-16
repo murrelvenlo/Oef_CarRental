@@ -25,7 +25,7 @@ namespace CarRental_App.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Auto>().ToTable("Auto");
             modelBuilder.Entity<Automodel>().ToTable("Automodel");

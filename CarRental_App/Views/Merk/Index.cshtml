@@ -1,6 +1,12 @@
 ﻿@model CarRental_App.ViewModels.AutomodelOverzichtViewModel
 
-<div>
+@*<div>
     <img src="~/images/red_car.jpeg"
          alt="auto" />
+</div>*@
+<div>
+    @foreach (var merk in Model.Merken)
+    {
+        <h1>@merk.MerkNaam</h1>
+    }
 </div>
