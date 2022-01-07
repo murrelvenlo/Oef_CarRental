@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Automodel\" />
+    <Folder Include="Views\Klant\" />
+    <Folder Include="Views\Reservatie\" />
   </ItemGroup>
 
 </Project>

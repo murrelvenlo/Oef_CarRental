@@ -1,20 +1,18 @@
 ﻿@model CarRental_App.ViewModels.AutomodelOverzichtViewModel
-
 @*<div>
-    <img src="~/images/red_car.jpeg"
-         alt="auto" />
-</div>*@
-<div>
+        <img src="~/images/red_car.jpeg"
+             alt="auto" />
+    </div>*@
+<div class="align-content-center">
     @foreach (var merk in Model.Merken)
     {
-        <div class="card flex-row">
-
-            <img class="card-img-left example-card-img-responsive" src="" />
+        <div class="card flex-row" style="width: 50rem;">
             <div class="card-body">
+                <img class="card-img-left" src="@merk.Automodellen.Select(a => a.Afbeelding)" alt="Auto">
                 <h4 class="card-title h5 h4-sm">@merk.MerkNaam</h4>
-                <button>Bekijk aanbiedingen</button>
+                <a class="btn btn-danger" asp-controller="Auto" asp-action="Index" asp-route-id="@merk.Automodellen.Select(x => x.Autos.Select(w => w.AutoID))">Bekijk aanbiedingen</a>
                 <p class="card-text">Example text</p>
             </div>
         </div>
     }
-    </div>
+</div>
