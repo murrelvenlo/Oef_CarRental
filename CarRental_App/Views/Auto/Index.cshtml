@@ -1,0 +1,15 @@
+﻿@model CarRental_App.ViewModels.AutoLijstViewModels
+
+<div class="align-content-center">
+    @foreach (var auto in Model.Autos)
+    {
+        <div class="card flex-row" style="width: 50rem;">
+            <div class="card-body">
+                <img class="card-img-left" src="" alt="Auto">
+                <h4 class="card-title h5 h4-sm">@auto.automodel.merk.MerkNaam</h4>
+                <a class="btn btn-danger" asp-controller="Auto" asp-action="Index" asp-route-id="">Bekijk aanbiedingen</a>
+                <p class="card-text">Example text</p>
+            </div>
+        </div>
+    }
+</div>

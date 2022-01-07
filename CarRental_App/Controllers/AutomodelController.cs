@@ -8,23 +8,20 @@ using CarRental_App.ViewModels;
 using CarRental_App.Data;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace CarRental_App.Controllers
 {
-    public class MerkController : Controller
+    public class AutomodelController : Controller
     {
         private readonly CarRentalContext _context;
 
-        public MerkController(CarRentalContext context)
+        public AutomodelController(CarRentalContext context)
         {
             _context = context;
-            
         }
-
         public async Task<IActionResult> Index()
         {
-            AutomodelOverzichtViewModel vm = new AutomodelOverzichtViewModel();
-            vm.Merken = await _context.Merken.Include(a => a.Automodellen).ToListAsync();
-            return View(vm);
+            return View();
         }
     }
 }

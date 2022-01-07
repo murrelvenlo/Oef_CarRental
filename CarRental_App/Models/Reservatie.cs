@@ -12,10 +12,8 @@ namespace CarRental_App.Models
         public Klant klant { get; set; }// eerst klant aanmaken
         public int KlantID { get; set; }
         [Display(Name = "Ophaaldatum")]
-        [DataType(DataType.Date)]
         public DateTime Ophaaldatum { get; set; }
         [Display(Name = "Afleverdatum")]
-        [DataType(DataType.Date)]
         public DateTime Afleverdatum { get; set; }
         public string Status { get; set; }
         public string Betaalmethode { get; set; }

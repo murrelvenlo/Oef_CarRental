@@ -17,5 +17,6 @@ namespace CarRental_App.ViewModels
        // public string Kleur { get; set; }
 
         public List<Auto> Autos { get; set; }
+        public string AutoZoeken { get; set; }
     }
 }
